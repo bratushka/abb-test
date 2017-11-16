@@ -27,7 +27,10 @@ class DashBoardComponent extends Component {
   };
 
   componentDidMount() {
-    setInterval(this.props.update, 200);
+    // Call this.props.update 10 times.
+    new Array(10).fill(undefined).forEach(this.props.update);
+    // Call this.props.update every 2 seconds.
+    setInterval(this.props.update, 2000);
   }
 
   render() {

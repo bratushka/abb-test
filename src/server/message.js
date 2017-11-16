@@ -5,7 +5,7 @@ function random(list) {
 export function message() {
   return {
     part: random(['A', 'B']),
-    feature: random(['one', 'two', 'three']),
+    feature: random(['One', 'Two', 'Three']),
     status: random([0, 1, 2]),
     data: [
       [Math.random(), Math.random(), random([0, 1, 2])],

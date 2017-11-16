@@ -9,6 +9,7 @@ function reducer(state = Immutable.OrderedMap(), action) {
       return state.withMutations(mutable => {
         mutable.setIn([action.part, action.feature, 'status'], action.status);
 
+        // Push the new data to the beginning of the array and shrink it to 3 items max.
         const newData = mutable
           .getIn([action.part, action.feature, 'data'], Immutable.List())
           .unshift(Immutable.fromJS(action.data))

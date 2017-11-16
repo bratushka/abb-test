@@ -6,6 +6,9 @@ docker-compose run front yarn
 docker-compose up
 ```
 
+At this point you'll be able to retrieve your application on `localhost:8000`. The port
+ can be changed in `docker-compose.yml::services::front::ports` if necessary.
+
 ### Build
 
 ```sh

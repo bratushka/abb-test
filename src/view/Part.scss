@@ -1,0 +1,14 @@
+.part {
+  margin-bottom: 10px;
+
+  &__header {
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 10px;
+  }
+
+  &__data {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

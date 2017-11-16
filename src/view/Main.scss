@@ -1,0 +1,23 @@
+@import "./constants.scss";
+
+a,
+article,
+div,
+form,
+main,
+section {
+  box-sizing: border-box;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  font-family: ubuntu, Helvetica, sans-serif;
+  font-size: 14px;
+  min-height: 100vh;
+}
+
+.main {
+  display: flex;
+  flex-grow: 1;
+}
